@@ -4,7 +4,7 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-    inv <- NULL
+  inv <- NULL
 	set <- function(y) {
 			x <<- y
 			inv <<- NULL
@@ -23,11 +23,12 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
 	xinv <- x$getinv()
-	if(!isnull(xinv)) {
-		return(xinv)
+	if(!is.null(xinv)) {
+	  message("getting cached data")
+    return(xinv)
 	}
 	xmat <- x$get()
 	xinv <- solve(xmat)
-	x$setinv(inv)
+	x$setinv(xinv)
 	xinv
 }
