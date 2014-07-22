@@ -6,7 +6,7 @@
 ## and then use cacheSolve (not solve) on the cached version of matrix.
 
 
-## makeCacheMatrxi function accepts a SQUARE matrix as input and implements
+## makeCacheMatrix function accepts a SQUARE matrix as input and implements
 ## caching functionality.  Non-square matrices cause fatal error. It returns
 ## an object that implements setter and getter functions for the matrix, and
 ## setter and getter functions for the inverse of the matrix 
