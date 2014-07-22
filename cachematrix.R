@@ -24,8 +24,8 @@ cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
 	xinv <- x$getinv()
 	if(!is.null(xinv)) {
-	  message("getting cached data")
-    return(xinv)
+		message("getting cached data")
+		return(xinv)
 	}
 	xmat <- x$get()
 	xinv <- solve(xmat)
